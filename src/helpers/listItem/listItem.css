@@ -1,0 +1,40 @@
+@import "../../vars.css";
+
+.listItem {
+  padding: 0.5vw;
+  position: relative;
+  color: var(--poly-main-color-3);
+}
+
+.listItem::before {
+  content: "NEW";
+  position: absolute;
+  width: 40%;
+  color: var(--master-color);
+  right: 0;
+  top: 10%;
+  font-size: x-small;
+  font-weight: bold;
+  font-family: sans-serif;
+  top: -12%;
+}
+
+.listItem::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  right: 0;
+  bottom: -20%;
+  background-image: linear-gradient(
+    to right,
+    var(--master-color) 55%,
+    transparent 55%,
+    transparent 65%,
+    var(--master-color) 65%,
+    var(--master-color) 80%,
+    transparent 80%,
+    transparent 90%,
+    var(--master-color) 90%
+  );
+}

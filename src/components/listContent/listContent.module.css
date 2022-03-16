@@ -1,0 +1,26 @@
+@import "../../vars.css";
+
+.container {
+  width: 100%;
+  min-height: 50vh;
+  background-color: var(--main-color-content);
+  border: 1px solid gray;
+}
+
+.contentBox {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.listBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  border: 0.05rem solid gray;
+  padding-bottom: 0.5rem;
+  border-bottom-style: dashed;
+}
+
+.tablesList {
+  flex-basis: 60%;
+}

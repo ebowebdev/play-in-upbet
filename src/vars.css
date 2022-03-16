@@ -1,0 +1,25 @@
+:root {
+  /* backGround colors */
+  --main-color-index-1: #000000;
+  --main-color-body: rgb(19, 17, 17);
+  --main-color-content: rgba(59, 58, 58, 0.2);
+  --main-color-black-clair: #2f2d2d;
+  --master-color: #f8ad16;
+  /* polygraPhy Colors */
+  --poly-main-color-1: #cec9c9;
+  --poly-main-color-2: #f1eaea;
+  --poly-main-color-3: rgb(255, 255, 255, 0.4);
+  --poly-main-color-4: #ffffff;
+  /* Font Size */
+  --fs-xs: 0.1rem
+  --fs-s: 0.5rem
+  --fs-md: 1rem
+  --fs-l: 1.5rem
+  --fs-xl: 2rem
+  /* Font Weight */
+  --fw-200: 100
+  --fw-300: 100
+  --fw-400: 100
+  --fw-500: 100
+  --fw-600: 100
+}

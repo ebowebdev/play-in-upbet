@@ -1,0 +1,5 @@
+.container {
+  width: 100%;
+  min-height: 5vh;
+  border: 1px solid gray;
+}

@@ -1,0 +1,28 @@
+@import "../../vars.css";
+
+.tablesHeart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.heartSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color-black-clair);
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+.heartIcon {
+  margin: auto;
+}

@@ -1,0 +1,13 @@
+@import "./vars.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: var(--main-color-body);
+  color: var(--poly-main-color-1);
+  width: 99vw;
+}
