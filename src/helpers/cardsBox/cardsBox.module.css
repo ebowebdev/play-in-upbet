@@ -1,0 +1,14 @@
+.cardsBox {
+  width: 100%;
+  border: 1px solid green;
+}
+
+.cardsBoxHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardsConatiner {
+  display: flex;
+  justify-content: space-between;
+}

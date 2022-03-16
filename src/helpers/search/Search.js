@@ -1,6 +1,7 @@
 import React from "react";
 import { faIndent, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { textsManager } from '../../textsManager'
 import styles from "./search.module.css";
 
 function Search() {
@@ -9,7 +10,7 @@ function Search() {
       <div className={styles.inputBnLine}>
         <div className={styles.inputBn}>
           <FontAwesomeIcon className={styles.searchIcon} icon={faSearch} />
-          <span>searche for a game</span>
+          <span>{ textsManager.listContent.input }</span>
         </div>
       </div>
       <div className={styles.providers}>

@@ -1,0 +1,14 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage {
+  flex-basis: 90%;
+}
+
+.cardFooter {
+  flex-basis: 90%;
+  display: flex;
+  justify-content: space-between;
+}
