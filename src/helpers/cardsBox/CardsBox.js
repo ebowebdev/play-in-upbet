@@ -2,11 +2,12 @@ import React from 'react'
 import ShowAll from '../showAll/ShowAll'
 import styles from './cardsBox.module.css'
 
-function CardsBox({ children, name = 'all tables' }) {
+function CardsBox({ children }) {
+  
   return (
     <div className={styles.cardsBox}>
       <div className={styles.cardsBoxHeader}>
-        <div className={styles.cardsBoxName}>{ name }</div>
+        <div className={styles.cardsBoxName}>All Game</div>
         <ShowAll />
       </div>
       <div className={styles.cardsConatiner}>

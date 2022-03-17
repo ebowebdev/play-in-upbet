@@ -6,7 +6,7 @@
   color: var(--poly-main-color-3);
 }
 
-.listItem::before {
+.label {
   content: "NEW";
   position: absolute;
   width: 40%;
@@ -37,4 +37,8 @@
     transparent 90%,
     var(--master-color) 90%
   );
+}
+
+.notShow {
+  display: none;
 }

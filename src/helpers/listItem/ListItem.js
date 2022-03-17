@@ -1,10 +1,11 @@
 import React from 'react'
-import './listItem.css'
+import styles from './listItem.module.css'
 
-function ListItem(props) {
+function ListItem({ category}) {
   return (
-    <li class='listItem'>
-      {props.name}
+    <li className={styles.listItem}>
+      {category.name}
+      <span className={category.label ? styles.label : styles.notShow}>NEW</span>
     </li>
   )
 }

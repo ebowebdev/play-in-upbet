@@ -1,14 +1,22 @@
-import React, {useContext} from "react";
+import React, { useContext, useMemo } from "react";
 import List from "../../helpers/list/List";
 import Search from "../../helpers/search/Search";
-import CardsBox from '../../helpers/cardsBox/CardsBox'
-import Card from '../../helpers/card/Card'
+import CardsBox from "../../helpers/cardsBox/CardsBox";
+import Card from "../../helpers/card/Card";
 import styles from "./listContent.module.css";
-import { Context } from '../../context/context'
+import { Context } from "../../context/context";
 
 function ListContent() {
-  const { state } = useContext(Context)
-  console.log('state in listContent --', state)
+  const {
+    data: { result },
+  } = useContext(Context);
+
+  const providers = useMemo(() => {
+    const all = result ? [...Object.values(result.providers)] : [];
+    return all;
+  }, [result]);
+
+  console.log({ providers });
   return (
     <div className={styles.container}>
       <div className={styles.contentBox}>
@@ -21,15 +29,11 @@ function ListContent() {
           </div>
         </div>
         <div>
-          <CardsBox>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </CardsBox>
+          {providers.map((provider) => (
+            <CardsBox provider={provider}>
+              {provider.slots.map(slot => <Card slot={slot} />)}
+            </CardsBox>
+          ))}
         </div>
       </div>
     </div>

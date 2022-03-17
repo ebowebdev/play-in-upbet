@@ -1,27 +1,27 @@
-import React, { useEffect, useContext } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ToolBar from "./components/toolbar/TootBar";
 import NavBar from "./components/navbar/NavBar";
-import ImageContent from "./components/imageContent/ImageContent";
-import ListContent from "./components/listContent/ListContent";
-import { Context } from "./context/context";
-import { fetchTablesData } from './context/actions'
+import LiveCasino from "./pages/liveCasino/LiveCasino";
 
 import "./app.css";
 
 function App() {
-  const { dispatch } = useContext(Context);
 
-  useEffect(() => {
-    fetchTablesData(dispatch)
-  }, []);
+  /*useEffect(() => {
+    fetchTablesData(dispatch);
+  });*/
 
   return (
-    <div class="app">
-      <ToolBar />
-      <NavBar />
-      <ImageContent />
-      <ListContent />
-    </div>
+    <Router>
+      <div class="app">
+        <ToolBar />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<LiveCasino />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

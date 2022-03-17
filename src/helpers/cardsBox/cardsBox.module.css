@@ -1,6 +1,6 @@
 .cardsBox {
   width: 100%;
-  border: 1px solid green;
+  margin: 2.5rem 0;
 }
 
 .cardsBoxHeader {
@@ -10,5 +10,6 @@
 
 .cardsConatiner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }

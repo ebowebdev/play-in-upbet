@@ -5,7 +5,7 @@ export const reducer = (state, { type, payload }) => {
     case "FETCH_TABLES_DATA":
       return {
         ...state,
-        tables: payload
+        ...payload
       }
     default:
       return state

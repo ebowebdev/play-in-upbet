@@ -1,14 +1,19 @@
 import React from 'react'
 import styles from './card.module.css'
 
-function Card() {
+function Card({ slot }) {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardImage}>
-        image
+        <img className={styles.img} src={slot.desktop_logo} alt="" />
+        <div className={styles.cardHover}>
+          <div className={styles.circle}>
+            <span></span>
+          </div>
+        </div>
       </div>
       <div className={styles.cardFooter}>
-        <div>Live-Sweet Candy</div>
+        <div>{ slot.name }</div>
         <div>Icon</div>
       </div>
     </div>

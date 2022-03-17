@@ -26,3 +26,29 @@
 .heartIcon {
   margin: auto;
 }
+
+.listItem {
+  padding: 0.5vw;
+  position: relative;
+  color: var(--poly-main-color-3);
+}
+
+.listItem::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  right: 0;
+  bottom: -20%;
+  background-image: linear-gradient(
+    to right,
+    var(--master-color) 55%,
+    transparent 55%,
+    transparent 65%,
+    var(--master-color) 65%,
+    var(--master-color) 80%,
+    transparent 80%,
+    transparent 90%,
+    var(--master-color) 90%
+  );
+}
