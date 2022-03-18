@@ -3,7 +3,9 @@ import styles from './imageContent.module.css'
 
 function ImageContent() {
   return (
-    <div className={styles.container}>ImageContent</div>
+    <div className={styles.container}>
+      <img className={styles.monoImg} src="images/Monopoly.jpg" alt="wellcome" />
+    </div>
   )
 }
 

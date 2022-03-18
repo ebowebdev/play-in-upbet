@@ -4,14 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: var(--fs-s);
+  font-weight: var(--fw-8);
+  font-weight: 800;
 }
 
 .list {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
 }
 
 .heartSpan {

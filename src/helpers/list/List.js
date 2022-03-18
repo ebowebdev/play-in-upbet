@@ -17,28 +17,17 @@ function List() {
     return all;
   }, [result]);
 
-  /*const allCategories = useMemo(()=>{
-    const all = result ? ['All Games', ...Object.keys(result.categories), 'Providers'] : []
-      console.log({result})
-      return all
-  },[result])
-
-  const categoriesObj = useMemo(()=>{
-    const all = result ? ['All Games', ...Object.values(result.categories)] : []
-      return all
-  },[result])*/
-
   return (
     <div className={styles.tablesHeart}>
       <span className={styles.heartSpan}>
         <FontAwesomeIcon className={styles.heartIcon} icon={faHeart} />
       </span>
       <ul className={styles.list}>
-        <li className={styles.listItem}>{ firstCategory }</li>
+        <ListItem category={{name:firstCategory}} key={firstCategory} />
         {categoriesObj?.map((item) => (
           <ListItem category={item} key={item} />
         ))}
-        <li className={styles.listItem}>{lastCategory}</li>
+        <ListItem category={{name:lastCategory}} key={lastCategory} />
       </ul>
     </div>
   );

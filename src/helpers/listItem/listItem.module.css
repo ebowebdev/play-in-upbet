@@ -1,9 +1,9 @@
 @import "../../vars.css";
 
 .listItem {
-  padding: 0.5vw;
+  padding: 0.5rem;
+  color: var(--poly-color-1);
   position: relative;
-  color: var(--poly-main-color-3);
 }
 
 .label {
@@ -15,11 +15,15 @@
   top: 10%;
   font-size: x-small;
   font-weight: bold;
-  font-family: sans-serif;
   top: -12%;
 }
 
-.listItem::after {
+.listItem p {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.listItem p::after {
   content: "";
   position: absolute;
   width: 100%;

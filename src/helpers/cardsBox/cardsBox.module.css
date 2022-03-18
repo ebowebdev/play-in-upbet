@@ -1,11 +1,19 @@
+@import "../../vars.css";
+
 .cardsBox {
   width: 100%;
-  margin: 2.5rem 0;
+  padding-top: 0.5rem;
+}
+
+.cardsBoxName {
+  font-size: var(--fs-xl);
 }
 
 .cardsBoxHeader {
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem 0;
+  font-weight: bold;
 }
 
 .cardsConatiner {

@@ -3,23 +3,25 @@
 .container {
   width: 100%;
   min-height: 50vh;
-  background-color: var(--main-color-content);
-  border: 1px solid gray;
+  background-color: black;
 }
 
 .contentBox {
   width: 90%;
   margin: 0 auto;
+  padding: 0 2rem;
+  background-color: var(--main-color-content);
 }
 
 .listBar {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   margin-bottom: 0.5rem;
-  border: 0.05rem solid gray;
   padding-bottom: 0.5rem;
   border-bottom-style: dashed;
+  border-bottom-width: 0.1rem;
+  border-bottom-color: var(--poly-color-1);
 }
 
 .tablesList {

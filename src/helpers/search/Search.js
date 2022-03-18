@@ -7,8 +7,8 @@ import styles from "./search.module.css";
 function Search() {
   return (
     <div className={styles.container}>
-      <div className={styles.inputBnLine}>
-        <div className={styles.inputBn}>
+      <div className={styles.inputBtnLine}>
+        <div className={styles.inputBtn}>
           <FontAwesomeIcon className={styles.searchIcon} icon={faSearch} />
           <span>{ textsManager.listContent.input }</span>
         </div>

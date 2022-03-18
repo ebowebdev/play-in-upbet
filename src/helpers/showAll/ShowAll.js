@@ -1,12 +1,16 @@
 import React from 'react'
 import { textsManager } from '../../textsManager'
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from './showAll.module.css'
 
 function ShowAll() {
   return (
-    <div>
-      <button>
+    <div className={styles.btnBox}>
+      <a href=".">
         { textsManager.listContent.showAll }
-      </button>
+      </a>
+      <FontAwesomeIcon icon={faAngleRight}/>
     </div>
   )
 }
