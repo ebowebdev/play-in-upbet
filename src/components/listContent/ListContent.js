@@ -21,9 +21,7 @@ function ListContent() {
     <div className={styles.container}>
       <div className={styles.contentBox}>
         <div className={styles.listBar}>
-          <div className={styles.tablesList}>
-            <List />
-          </div>
+          <List />
           <div className={styles.searchBox}>
             <Search />
           </div>
@@ -31,7 +29,9 @@ function ListContent() {
         <div>
           {providers.map((provider) => (
             <CardsBox provider={provider}>
-              {provider.slots.map(slot => <Card slot={slot} />)}
+              {provider.slots.map((slot) => (
+                <Card slot={slot} />
+              ))}
             </CardsBox>
           ))}
         </div>

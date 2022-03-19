@@ -7,8 +7,8 @@
 }
 
 .app {
+  width: 98vw;
   background-color: var(--main-color-body);
   color: var(--poly-main-color-1);
   font-family: "Arial Narrow", Arial, sans-serif;
-  width: 99vw;
 }

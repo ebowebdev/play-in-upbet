@@ -4,10 +4,10 @@ import ListContent from "../../components/listContent/ListContent";
 
 function LiveCasino() {
   return (
-    <div>
+    <React.Fragment>
       <ImageContent />
       <ListContent />
-    </div>
+    </React.Fragment>
   )
 }
 

@@ -1,5 +1,7 @@
+@import "../../vars.css";
+
 .container {
   width: 100%;
   min-height: 5vh;
-  border: 1px solid gray;
+  border-bottom: var(--border-line) solid var(--main-color-black);
 }

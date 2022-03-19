@@ -3,7 +3,7 @@
 .tablesHeart {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-size: var(--fs-s);
   font-weight: var(--fw-8);
   font-weight: 800;
@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--main-color-black-clair);
-  padding: 0.4rem;
+  padding: 0.7rem;
   border-radius: 50%;
 }
 
@@ -52,4 +52,26 @@
     transparent 90%,
     var(--master-color) 90%
   );
+}
+
+/*
+-------- Media Query -------
+*/
+
+@media (max-width: 1100px) {
+  .list {
+    overflow: auto;
+    white-space: nowrap;
+    padding-top: 0.5rem;
+    padding-left: 0.3rem;
+  }
+
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tablesHeart {
+    order: 2;
+    padding: 0 0.5rem;
+  }
 }

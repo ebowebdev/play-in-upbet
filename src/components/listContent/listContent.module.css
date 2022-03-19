@@ -24,6 +24,22 @@
   border-bottom-color: var(--poly-color-1);
 }
 
-.tablesList {
-  flex-basis: 60%;
+/*
+-------- Media Query -------
+*/
+
+@media (max-width: 1100px) {
+  .listBar {
+    flex-direction: column;
+  }
+
+  .searchBox {
+    order: 1;
+  }
+
+  .contentBox {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }

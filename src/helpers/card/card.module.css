@@ -50,3 +50,19 @@
 .cardContainer:hover .playImgBox {
   opacity: 1;
 }
+
+/*
+-------- Media Query -------
+*/
+
+@media (max-width: 1100px) {
+  .cardContainer {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 900px) {
+  .cardContainer {
+    width: 50%;
+  }
+}

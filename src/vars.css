@@ -9,7 +9,6 @@
   --poly-main-color-1: #cec9c9;
   --poly-main-color-2: #f1eaea;
   --poly-color-1: rgb(255, 255, 255, 0.4);
-  --poly-main-color-3: red;
   --poly-main-color-4: #ffffff;
   /* Font Size */
   --fs-xs: 0.5rem;
@@ -22,4 +21,6 @@
   --fw-6: 600;
   --fw-7: 700;
   --fw-8: 800;
+  /* border bottom line */
+  --border-line: 0.13rem;
 }

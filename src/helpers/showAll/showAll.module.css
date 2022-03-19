@@ -19,3 +19,18 @@
   text-transform: capitalize;
   color: var(--main-color-black);
 }
+
+/*
+-------- Media Query -------
+*/
+
+@media (max-width: 1100px) {
+  .btnBox a {
+    display: none;
+  }
+
+  .btnBox {
+    border-radius: 50%;
+    padding: 0.7rem;
+  }
+}

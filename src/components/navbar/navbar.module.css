@@ -1,5 +1,10 @@
 @import "../../vars.css";
 
+.navbar {
+  width: 100%;
+  border-bottom: var(--border-line) solid var(--main-color-black);
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -11,21 +16,24 @@
   width: 100%;
   display: flex;
   align-items: center;
-  flex-basis: 60%;
+  justify-content: flex-end;
 }
 
 .list {
-  width: 100%;
   list-style: none;
   display: flex;
+  flex-basis: 40%;
+  flex-grow: 1;
   justify-content: space-between;
-  align-content: flex-end;
+  align-self: flex-end;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: var(--fs-5);
+  padding-bottom: 0.5rem;
 }
 
 .logo {
   font-size: 2rem;
+  flex-basis: 30%;
 }
 
 .logo span {
@@ -33,4 +41,36 @@
   font-weight: bold;
   color: var(--master-color);
   font-style: italic;
+}
+
+/*
+-------- Media Query -------
+*/
+
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .list {
+    flex-basis: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1rem;
+    border-top: 0.2rem solid var(--master-color);
+  }
+
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .list li {
+    padding-right: 0.7rem;
+  }
 }

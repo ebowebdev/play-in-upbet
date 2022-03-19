@@ -5,15 +5,12 @@
   height: 100%;
   display: flex;
   font-family: sans-serif;
-  align-content: center;
-  padding: 1rem 0;
   font-size: var(--fs-s);
   color: var(--poly-color-1);
   background-color: var(--main-color-black-clair);
 }
 
-.inputBtn,
-.providers {
+.inputBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,13 +18,20 @@
   padding: 0 0.5rem;
 }
 
+.providers {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-left-width: 0.05rem;
+  border-left-color: var(--poly-color-1);
+  border-left-style: solid;
+}
+
 .inputBtnLine {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right-width: 0.05rem;
-  border-right-color: var(--poly-color-1);
-  border-right-style: solid;
+  padding: 1rem 1.5rem 1rem 0.5rem;
 }
 
 .searchIcon {
@@ -36,4 +40,18 @@
 
 .indentIcon {
   padding-left: 0.5rem;
+}
+
+/*
+-------- Media Query -------
+*/
+
+@media (max-width: 480px) {
+  .providers {
+    margin: 0;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
 }
