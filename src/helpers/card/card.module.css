@@ -15,7 +15,6 @@
   flex-basis: 90%;
   display: flex;
   justify-content: space-between;
-  font-size: var(--fs-s);
 }
 
 .img {

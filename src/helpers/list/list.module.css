@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  font-size: var(--fs-s);
+  font-size: var(--fs-md);
   font-weight: var(--fw-8);
   font-weight: 800;
 }
@@ -58,7 +58,7 @@
 -------- Media Query -------
 */
 
-@media (max-width: 1100px) {
+@media (max-width: 1440px) {
   .list {
     overflow: auto;
     white-space: nowrap;

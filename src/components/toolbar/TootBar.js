@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './tootBar.module.css'
 
 function TootBar() {
@@ -7,4 +7,4 @@ function TootBar() {
   )
 }
 
-export default TootBar
+export default memo(TootBar)

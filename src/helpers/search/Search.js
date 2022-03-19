@@ -1,4 +1,4 @@
-import React from "react";
+import React , { memo } from 'react'
 import { faIndent, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { textsManager } from '../../textsManager'
@@ -21,4 +21,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default memo(Search);

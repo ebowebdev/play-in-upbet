@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { memo } from 'react'
 import ShowAll from '../showAll/ShowAll'
 import styles from './cardsBox.module.css'
 
@@ -17,4 +17,4 @@ function CardsBox({ children }) {
   )
 }
 
-export default CardsBox
+export default memo(CardsBox)

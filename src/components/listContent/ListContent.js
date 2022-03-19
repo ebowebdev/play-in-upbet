@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from "react";
+import React, { useContext, useMemo, memo } from "react";
 import List from "../../helpers/list/List";
 import Search from "../../helpers/search/Search";
 import CardsBox from "../../helpers/cardsBox/CardsBox";
@@ -16,7 +16,6 @@ function ListContent() {
     return all;
   }, [result]);
 
-  console.log({ providers });
   return (
     <div className={styles.container}>
       <div className={styles.contentBox}>
@@ -40,4 +39,4 @@ function ListContent() {
   );
 }
 
-export default ListContent;
+export default memo(ListContent);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from 'react'
 import styles from "./navbar.module.css";
 
 const categoriesList = [
@@ -31,4 +31,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default memo(NavBar);

@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { memo } from 'react'
 import styles from './listItem.module.css'
 
 function ListItem({ category}) {
@@ -10,4 +10,4 @@ function ListItem({ category}) {
   )
 }
 
-export default ListItem
+export default memo(ListItem)

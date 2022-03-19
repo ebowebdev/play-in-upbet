@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './imageContent.module.css'
 
 function ImageContent() {
@@ -9,4 +9,4 @@ function ImageContent() {
   )
 }
 
-export default ImageContent
+export default memo(ImageContent)

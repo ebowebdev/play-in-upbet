@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { memo } from 'react'
 import { textsManager } from '../../textsManager'
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,4 +15,4 @@ function ShowAll() {
   )
 }
 
-export default ShowAll
+export default memo(ShowAll)

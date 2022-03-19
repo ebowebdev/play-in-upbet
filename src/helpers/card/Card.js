@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { memo } from 'react'
 import styles from './card.module.css'
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,4 +20,4 @@ function Card({ slot }) {
   )
 }
 
-export default Card
+export default memo(Card)
