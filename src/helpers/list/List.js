@@ -14,7 +14,8 @@ function List() {
   const { listContent : { firstCategory, lastCategory }} = textsManager
   const categoriesObj = useMemo(() => {
     const all = result ? [...Object.values(result.categories)] : [];
-    return all;
+    const newAll = all.filter(item => item.name !== 'New Entry')
+    return newAll;
   }, [result]);
 
   return (
@@ -23,11 +24,11 @@ function List() {
         <FontAwesomeIcon className={styles.heartIcon} icon={faHeart} />
       </span>
       <ul className={styles.list}>
-        <ListItem category={{name:firstCategory}} key={firstCategory} />
+        <ListItem category={{name:firstCategory}} />
         {categoriesObj?.map((item) => (
           <ListItem category={item} key={item} />
         ))}
-        <ListItem category={{name:lastCategory}} key={lastCategory} />
+        <ListItem category={{name:lastCategory}} />
       </ul>
     </div>
   );

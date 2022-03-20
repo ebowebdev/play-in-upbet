@@ -23,7 +23,7 @@
   padding-bottom: 0.5rem;
 }
 
-.listItem p::after {
+.text::after {
   content: "";
   position: absolute;
   width: 100%;

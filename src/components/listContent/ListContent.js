@@ -29,7 +29,7 @@ function ListContent() {
           {providers.map((provider) => (
             <CardsBox provider={provider}>
               {provider.slots.map((slot) => (
-                <Card slot={slot} />
+                <Card slot={slot} key={slot.id}/>
               ))}
             </CardsBox>
           ))}

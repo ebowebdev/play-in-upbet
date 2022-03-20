@@ -13,8 +13,11 @@
 }
 
 .navbarList {
-  width: 100%;
+  font-size: var(--fs-l);
+  font-weight: var(--fw-6);
+  color: var(--poly-color-white);
   display: flex;
+  flex-basis: 50%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -27,17 +30,17 @@
   justify-content: space-between;
   align-self: flex-end;
   text-transform: uppercase;
-  font-weight: var(--fs-5);
   padding-bottom: 0.5rem;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   flex-basis: 30%;
+  font-weight: bold;
 }
 
 .logo span {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: var(--master-color);
   font-style: italic;
@@ -47,7 +50,7 @@
 -------- Media Query -------
 */
 
-@media (max-width: 1100px) {
+@media (max-width: 1440px) {
   .container {
     width: 100%;
     display: flex;

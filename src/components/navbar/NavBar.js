@@ -22,7 +22,7 @@ function NavBar() {
         <div className={styles.navbarList}>
           <ul className={styles.list}>
             {categoriesList.map((category) => (
-              <li>{category}</li>
+              <li key={category}>{category}</li>
             ))}
           </ul>
         </div>

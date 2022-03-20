@@ -4,20 +4,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-basis: 5%;
+  padding: 0.6rem 1rem;
+  font-size: var(--fs-md);
   background-color: var(--master-color);
-  padding: 0.4rem 1rem;
   border-radius: 0.9rem;
-  font-weight: initial;
-  color: var(--main-color-black);
+  color: var(--poly-color-black);
 }
 
 .btnBox a {
   width: 100%;
   height: 100%;
+  padding-right: 1rem;
   text-decoration: none;
-  padding-right: 0.3rem;
   text-transform: capitalize;
-  color: var(--main-color-black);
+  color: var(--poly-color-black);
 }
 
 /*
@@ -30,7 +31,8 @@
   }
 
   .btnBox {
+    flex-basis: 0%;
     border-radius: 50%;
-    padding: 0.7rem;
+    padding: 0.6rem;
   }
 }

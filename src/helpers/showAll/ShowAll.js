@@ -7,7 +7,7 @@ import styles from './showAll.module.css'
 function ShowAll() {
   return (
     <div className={styles.btnBox}>
-      <a href=".">
+      <a href="/">
         { textsManager.listContent.showAll }
       </a>
       <FontAwesomeIcon icon={faAngleRight}/>

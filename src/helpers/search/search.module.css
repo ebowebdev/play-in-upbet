@@ -5,9 +5,8 @@
   height: 100%;
   display: flex;
   font-family: sans-serif;
-  font-size: var(--fs-s);
   color: var(--poly-color-1);
-  background-color: var(--main-color-black-clair);
+  background-color: var(--main-color-search);
 }
 
 .inputBtn {
@@ -15,13 +14,14 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.2rem;
 }
 
 .providers {
   display: flex;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   border-left-width: 0.05rem;
   border-left-color: var(--poly-color-1);
   border-left-style: solid;
@@ -53,5 +53,18 @@
 
   .container {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 1190px) {
+  .container {
+    justify-content: space-between;
+    font-size: var(--fs-s);
+  }
+}
+
+@media (max-width: 1330px) {
+  .inputBtnLine {
+    padding: 0.3rem 1rem 0.3rem 0.3rem;
   }
 }

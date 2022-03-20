@@ -3,22 +3,22 @@
 .container {
   width: 100%;
   min-height: 50vh;
-  background-color: black;
+  background-color: var(--main-color-listContent-one);
 }
 
 .contentBox {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding: 0 2rem;
-  background-color: var(--main-color-content);
+  background-color: var(--main-color-listContent-two);
 }
 
 .listBar {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.5rem;
   margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   border-bottom-style: dashed;
   border-bottom-width: 0.1rem;
   border-bottom-color: var(--poly-color-1);
@@ -28,9 +28,17 @@
 -------- Media Query -------
 */
 
-@media (max-width: 1440px) {
+@media (max-width: 1338px) {
+  .listBar {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+@media (max-width: 1190px) {
   .listBar {
     flex-direction: column;
+    padding-top: 0;
   }
 
   .searchBox {

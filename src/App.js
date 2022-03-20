@@ -6,13 +6,13 @@ import LiveCasino from "./pages/liveCasino/LiveCasino";
 import "./app.css";
 
 function App() {
-
   return (
     <Router>
       <div class="app">
         <NavBar />
         <Routes>
           <Route path="/" element={<LiveCasino />} />
+          <Route path="/:nav" element={<LiveCasino />} />
         </Routes>
       </div>
     </Router>

@@ -13,7 +13,7 @@ export const Provider = ({ children }) => {
   useEffect(() => {
     axios.get(URL)
       .then(res => {
-        setLoading(false)
+        setLoading(true)
         return res.data
       })
       .then(response => {

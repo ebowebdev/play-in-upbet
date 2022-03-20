@@ -3,10 +3,9 @@
 .tablesHeart {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  font-size: var(--fs-md);
-  font-weight: var(--fw-8);
-  font-weight: 800;
+  align-items: center;
+  font-size: var(--fs-l);
+  font-weight: var(--fw-bold);
 }
 
 .list {
@@ -58,7 +57,13 @@
 -------- Media Query -------
 */
 
-@media (max-width: 1440px) {
+@media (max-width: 1330px) {
+  .tablesHeart {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1190px) {
   .list {
     overflow: auto;
     white-space: nowrap;
