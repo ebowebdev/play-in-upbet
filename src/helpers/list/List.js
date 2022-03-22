@@ -25,8 +25,8 @@ function List() {
       </span>
       <ul className={styles.list}>
         <ListItem category={{name:firstCategory}} />
-        {categoriesObj?.map((item) => (
-          <ListItem category={item} key={item} />
+        {categoriesObj?.map((item, index) => (
+          <ListItem category={item} key={index} />
         ))}
         <ListItem category={{name:lastCategory}} />
       </ul>

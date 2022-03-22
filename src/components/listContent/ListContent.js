@@ -16,6 +16,8 @@ function ListContent() {
     return all;
   }, [result]);
 
+  console.log({providers})
+
   return (
     <div className={styles.container}>
       <div className={styles.contentBox}>
@@ -26,10 +28,10 @@ function ListContent() {
           </div>
         </div>
         <div>
-          {providers.map((provider) => (
-            <CardsBox provider={provider}>
+          {providers.map((provider, index) => (
+            <CardsBox key={index} provider={provider}>
               {provider.slots.map((slot) => (
-                <Card slot={slot} key={slot.id}/>
+                <Card  key={slot.id} slot={slot}/>
               ))}
             </CardsBox>
           ))}
